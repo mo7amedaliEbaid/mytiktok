@@ -1,16 +1,51 @@
-# mytiktok
+# MyTikTok
+By using firebase as a backend and getx as a state management, I developed a simulation of the famous TikTok app.
 
-A new Flutter project.
+## State Management
+✔️ Getx <br />
 
-## Getting Started
+## Design Pattern
+✔️ MVC Pattern <br />
 
-This project is a starting point for a Flutter application.
+## Features
+✔️ Authentication with Email & Password
+✔️ Uploading Videos with Caption
+✔️ Compressing Videos
+✔️ Generating Thumbnails Out of Video
+✔️ Displaying Videos with Caption
+✔️ Liking on Posts
+✔️ Commenting on Posts
+✔️ Liking the Comments
+✔️ Searching Users
+✔️ Following Users
+✔️ Displaying Followers, Following, Likes & Posts of User
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**firebase**             
+- firebase_core:                                
+- firebase_auth:                              
+- cloud_firestore:            
+- firebase_storage:          
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**video management**                
+- video_player:
+- video_compress:
+
+**state management**            
+- get:
+
+**common**          
+- cached_network_image:
+- image_picker:
+- timeago:
+
+
+## Screenshots
+<p float="left">
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/1d4786b0d6b6b5d659683bc2a1bd2e53c67c51b2/mytiktok_screenshots/profile.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/2.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/3.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/4.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/5.jpg" width="120" />
+</p>
