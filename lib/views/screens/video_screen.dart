@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import '../../constants.dart';
 import '../../controllers/video_controller.dart';
 import '../widgets/circle_animation.dart';
-import '../widgets/video_player_iten.dart';
+import '../widgets/video_player_item.dart';
 import 'comment_screen.dart';
 
 class VideoScreen extends StatelessWidget {
