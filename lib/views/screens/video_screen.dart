@@ -34,7 +34,7 @@ class VideoScreen extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
               child: Image(
-                image:NetworkImage(profilePhoto),
+                image: NetworkImage(profilePhoto),
                 fit: BoxFit.cover,
               ),
             ),
@@ -76,14 +76,13 @@ class VideoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
-
       body: Obx(() {
         log(videoController.videoList.length.toString());
         return PageView.builder(
-          itemCount:videoController.videoList.length,
+          itemCount: videoController.videoList.length,
           controller: PageController(initialPage: 0, viewportFraction: 1),
           scrollDirection: Axis.vertical,
           itemBuilder: (context, index) {
@@ -95,16 +94,16 @@ class VideoScreen extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    const SizedBox(
-                      height: 100,
+                    SizedBox(
+                      height: size.height * .17,
                     ),
                     Expanded(
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                           Expanded(
-                             child: Container(
+                          Expanded(
+                            child: Container(
                               padding: const EdgeInsets.only(
                                 left: 20,
                               ),
@@ -114,21 +113,11 @@ class VideoScreen extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text(
-                                    data.username,
-                                    style: const TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Text(
-                                    data.caption,
-                                    style: const TextStyle(
-                                      fontSize: 15,
-                                      color: Colors.white,
-                                    ),
-                                  ),
+                                  Text(data.username,
+                                      style: normalwhite.copyWith(
+                                          fontWeight: FontWeight.bold)),
+                                  Text(data.caption,
+                                      style: smallwhite.copyWith(fontSize: 15)),
                                   Row(
                                     children: [
                                       const Icon(
@@ -136,28 +125,24 @@ class VideoScreen extends StatelessWidget {
                                         size: 15,
                                         color: Colors.white,
                                       ),
-                                      Text(
-                                        data.songName,
-                                        style: const TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
+                                      Text(data.songName,
+                                          style: smallwhite.copyWith(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold)),
                                     ],
                                   )
                                 ],
                               ),
+                            ),
                           ),
-                           ),
                           Container(
-                            width: 100,
+                            width: size.width * .2,
                             margin: EdgeInsets.only(top: size.height / 5),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 buildProfile(
-                                 data.profilePhoto,
+                                  data.profilePhoto,
                                 ),
                                 Column(
                                   children: [
@@ -174,13 +159,8 @@ class VideoScreen extends StatelessWidget {
                                       ),
                                     ),
                                     const SizedBox(height: 7),
-                                    Text(
-                                      data.likes.length.toString(),
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                      ),
-                                    )
+                                    Text(data.likes.length.toString(),
+                                        style: normalwhite)
                                   ],
                                 ),
                                 Column(
@@ -200,13 +180,8 @@ class VideoScreen extends StatelessWidget {
                                       ),
                                     ),
                                     const SizedBox(height: 7),
-                                    Text(
-                                      data.commentCount.toString(),
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                      ),
-                                    )
+                                    Text(data.commentCount.toString(),
+                                        style: normalwhite)
                                   ],
                                 ),
                                 Column(
@@ -219,13 +194,10 @@ class VideoScreen extends StatelessWidget {
                                         color: Colors.white,
                                       ),
                                     ),
-                                    const SizedBox(height: 7),
+                                    mediumvertical_space,
                                     Text(
                                       data.shareCount.toString(),
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                      ),
+                                      style:normalwhite
                                     )
                                   ],
                                 ),

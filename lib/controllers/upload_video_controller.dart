@@ -38,13 +38,11 @@ class UploadVideoController extends GetxController {
     return downloadUrl;
   }
 
-  // upload video
   uploadVideo(String songName, String caption, String videoPath) async {
     try {
       String uid = firebaseAuth.currentUser!.uid;
       DocumentSnapshot userDoc =
           await firestore.collection('users').doc(uid).get();
-      // get id
       var allDocs = await firestore.collection('videos').get();
       int len = allDocs.docs.length;
       String videoUrl = await _uploadVideoToStorage("Video $len", videoPath);

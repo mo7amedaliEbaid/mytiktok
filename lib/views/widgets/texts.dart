@@ -37,7 +37,7 @@ Text registetitlertext = const Text(
     fontWeight: FontWeight.w700,
   ),
 );
-Text buttonregiste_text=Text(
+Text buttonregiste_text = Text(
   'Register',
   style: TextStyle(
     fontSize: 20,
@@ -45,7 +45,7 @@ Text buttonregiste_text=Text(
   ),
 );
 Text nothaveaccount_text = Text('Don\'t have an account? ', style: normalwhite);
-Text haveaccount_text= const Text(
+Text haveaccount_text = const Text(
   'Already have an account? ',
   style: TextStyle(
     fontSize: 20,
@@ -60,7 +60,7 @@ Text logintext = const Text(
     fontWeight: FontWeight.w700,
   ),
 );
-Text redlogin_text=Text(
+Text redlogin_text = Text(
   'Login',
   style: TextStyle(fontSize: 20, color: buttonColor),
 );
@@ -70,5 +70,35 @@ Text titletext = Text(
     fontSize: 35,
     color: buttonColor,
     fontWeight: FontWeight.w900,
+  ),
+);
+
+Text followingtext = const Text(
+  'Following',
+  style: TextStyle(
+    fontSize: 14,
+  ),
+);
+
+Text followerstext = const Text(
+  'Followers',
+  style: TextStyle(
+    fontSize: 14,
+  ),
+);
+
+Text likestext = const Text(
+  'Likes',
+  style: TextStyle(
+    fontSize: 14,
+  ),
+);
+
+Text searchusers_text= Text(
+  'Search for users!',
+  style: TextStyle(
+    fontSize: 25,
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
   ),
 );

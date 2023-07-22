@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mytiktok/constants.dart';
 import 'package:mytiktok/views/screens/profile_screen.dart';
+import 'package:mytiktok/views/widgets/texts.dart';
 
 import '../../controllers/search_controller.dart';
 import '../../models/user.dart';
@@ -18,27 +20,17 @@ class SearchScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.red.shade900,
           title: TextFormField(
-            decoration: const InputDecoration(
+            decoration:  InputDecoration(
               filled: false,
               hintText: 'Search',
-              hintStyle: TextStyle(
-                fontSize: 18,
-                color: Colors.white,
-              ),
+              hintStyle: normalwhite.copyWith(fontSize: 18)
             ),
             onFieldSubmitted: (value) => mysearchController.searchUser(value),
           ),
         ),
         body: mysearchController.searchedUsers.isEmpty
-            ? const Center(
-                child: Text(
-                  'Search for users!',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+            ?  Center(
+                child:searchusers_text
               )
             : ListView.builder(
                 itemCount: mysearchController.searchedUsers.length,
@@ -50,17 +42,17 @@ class SearchScreen extends StatelessWidget {
                         builder: (context) => ProfileScreen(uid: user.uid),
                       ),
                     ),
-                    child: ListTile(
-                      leading: CircleAvatar(
-                        backgroundImage: NetworkImage(
-                          user.profilePhoto,
-                      ),
-                      ),
-                      title: Text(
-                        user.name,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            user.profilePhoto,
+                        ),
+                        ),
+                        title: Text(
+                          user.name,
+                          style: normalwhite.copyWith(fontSize: 18)
                         ),
                       ),
                     ),

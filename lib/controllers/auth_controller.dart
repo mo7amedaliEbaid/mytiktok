@@ -7,7 +7,7 @@ import '../models/user.dart'as model;
 
 import '../constants.dart';
 import '../views/screens/login_screen.dart';
-import '../views/screens/home_screen.dart';
+import '../views/screens/root_screen.dart';
 
 
 class AuthController extends GetxController {
@@ -30,7 +30,7 @@ class AuthController extends GetxController {
     if (user == null) {
       Get.offAll(() => LoginScreen());
     } else {
-      Get.offAll(() => const HomeScreen());
+      Get.offAll(() => const RootScreen());
     }
   }
 
@@ -44,7 +44,7 @@ class AuthController extends GetxController {
     _pickedImage = Rx<File?>(File(pickedImage?.path??errornetworkimage));
   }
 
-  // upload to firebase storage
+
   Future<String> _uploadToStorage(File image) async {
     Reference ref = firebaseStorage
         .ref()
@@ -57,7 +57,7 @@ class AuthController extends GetxController {
     return downloadUrl;
   }
 
-  // registering the user
+
   void registerUser(
       String username, String email, String password, File? image) async {
     try {
@@ -65,7 +65,6 @@ class AuthController extends GetxController {
           email.isNotEmpty &&
           password.isNotEmpty &&
           image != null) {
-        // save out user to our ath and firebase firestore
         UserCredential cred = await firebaseAuth.createUserWithEmailAndPassword(
           email: email,
           password: password,
