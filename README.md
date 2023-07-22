@@ -54,3 +54,5 @@ By using firebase as a backend and getx as a state management, I developed a sim
 <img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/login.png" width="120" />
 <img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/comments1.png" width="120" />
 </p>
+
+more screenshots https://github.com/mo7amedaliEbaid/mytiktok/blob/e7a24539ac60ba189e04827a34ecfc5ae3fac742/mytiktok_screenshots
