@@ -44,8 +44,11 @@ By using firebase as a backend and getx as a state management, I developed a sim
 ## Screenshots
 <p float="left">
 <img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/1d4786b0d6b6b5d659683bc2a1bd2e53c67c51b2/mytiktok_screenshots/profile.jpg" width="120" />
-<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/2.jpg" width="120" />
-<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/3.jpg" width="120" />
-<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/4.jpg" width="120" />
-<img src="https://github.com/mo7amedaliEbaid/inform-me/blob/f0251854616c60bbbb8058d6c83297e23c95f9fd/informme_screenshots/5.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/login.png" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/login.png" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/video.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/video1.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/comments.jpg" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/comments1.png" width="120" />
+<img src="https://github.com/mo7amedaliEbaid/mytiktok/blob/16bffa6f81eedf49d1d310219ce1209b1f5940ae/mytiktok_screenshots/getvideo.jpg" width="120" />
 </p>
