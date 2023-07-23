@@ -56,3 +56,6 @@ By using firebase as a backend and getx as a state management, I developed a sim
 </p>
 
 more screenshots https://github.com/mo7amedaliEbaid/mytiktok/blob/e7a24539ac60ba189e04827a34ecfc5ae3fac742/mytiktok_screenshots
+
+## Video
+https://www.linkedin.com/posts/mo7amedebaid_flutter-firebase-tiktok-activity-7088857911199768576-KgoU?utm_source=share&utm_medium=member_desktop
