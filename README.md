@@ -1,5 +1,5 @@
 # MyTikTok
-By using firebase as a backend and getx as a state management, I developed a simulation of the famous TikTok app.
+By using firebase as a backend and getx as a state management, I developed a simulation of the famous TikTok app .
 
 ## State Management
 ✔️ Getx <br />
